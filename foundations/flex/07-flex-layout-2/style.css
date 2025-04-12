@@ -5,7 +5,7 @@ body {
 }
 
 .header {
-  height: 72px;
+  height: 36px;
   background: darkmagenta;
   color: white;
 }
@@ -20,6 +20,7 @@ body {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  display: inline-block;
 }
 
 .card {
@@ -27,3 +28,54 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.header{
+  font-weight: 700;
+  padding: 8px;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+.content{
+  display: flex;
+}
+.top,.bottom{
+  display: flex;
+
+  }
+  .card{
+    font-size: 12px;
+    height: 275px;
+    width:200px;
+    margin:20px;
+    box-sizing: border-box;
+    color:black;
+    font-weight: 700;
+    }
+    .sidebar{
+      flex-shrink: 0;
+    }
+    li{
+      margin: 10px;
+    }
+     
